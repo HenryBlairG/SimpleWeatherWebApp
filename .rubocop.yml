@@ -1,0 +1,33 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-performance
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.7
+  DisplayStyleGuide: true
+  Include:
+    - '**/*.rb'
+    - '**/*.jbuilder'
+    - '**/*.rake'
+    - '**/Gemfile'
+    - '**/Rakefile'
+  Exclude:
+    - 'db/migrate/**/*'
+    - 'db/schema.rb'
+    - 'script/**/*'
+    - 'vendor/**/*'
+    - 'bin/**/*'
+    - 'node_modules/**/*'
+
+Layout/LineLength:
+  IgnoredPatterns: ['\A\s*#']
+  Max: 80
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+    - 'Gemfile'
+    - 'config/routes.rb'
+    - 'config/environments/**/*'

@@ -1,0 +1,23 @@
+{
+  "name": "weather-app",
+  "private": true,
+  "dependencies": {
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "4.3.0",
+    "@vue/compiler-sfc": "^3.0.7",
+    "turbolinks": "^5.2.0",
+    "vue": "^3.0.7",
+    "vue-loader": "^16.1.2"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "eslint": "7.7.0",
+    "eslint-config-google": "^0.14.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "eslint": "eslint --ext .js,.es6 app/javascript"
+  }
+}

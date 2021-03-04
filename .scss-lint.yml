@@ -1,0 +1,3 @@
+linters:
+  HexNotation:
+    style: uppercase
