@@ -4,6 +4,6 @@ class Area < ApplicationRecord
   belongs_to :country
   
   # Validations
-  validates_associated :area, :country
+  validates_associated :city, :country
   validates :a_ID, :a_local_name, presence: true
 end
