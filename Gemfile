@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'grape', '>= 1.5.2'
 gem 'grape-active_model_serializers', '>= 1.5.2'
 gem 'rack-cors', '>= 1.1.1'
+gem 'rest-client', '>= 2.1.0'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
