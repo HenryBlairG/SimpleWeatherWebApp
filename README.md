@@ -30,3 +30,11 @@
 * Fix eslint offences automatically: `docker-compose exec web yarn run eslint --fix --ext .js,.es6 app/javascript`
 * Fix rubocop offences automatically: `docker-compose exec web rubocop -a`
 * Fix erblint offences automatically: `docker-compose exec web bundle exec erblint --lint-all -a`
+
+***
+## Recursos Utilizados
+
+* [Documentación Oficial de Ruby](https://guides.rubyonrails.org/)
+* [Tutorial de Vue 3 con Rails](https://dev.to/vannsl/vue3-on-rails-l9d#install-npm-packages)
+* [Tutorial para integrar API con Rails](https://medium.com/@ryanwaldorf/how-to-add-an-api-to-an-existing-rails-app-1d2419ba91bd)
+* [AccuWeather](https://developer.accuweather.com/)
