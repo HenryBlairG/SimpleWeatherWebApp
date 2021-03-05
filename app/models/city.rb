@@ -2,7 +2,7 @@
 
 class City < ApplicationRecord
   # Validations
-  validates_associated :area
-  validates :key, :gmt, :local_name, presence: true
-  validates :key, :gmt, numericality: { only_integer: true }
+  validates :key, :name, :area, :country, :region, presence: true
+  validates :region, uniqueness: { scope: [:country, :area, :name] }
+  validates :key, numericality: { only_integer: true }
 end
