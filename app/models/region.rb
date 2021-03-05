@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Region < ApplicationRecord
   # Associations
   has_many :country, dependent: :destroy
