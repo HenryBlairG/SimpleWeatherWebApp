@@ -1,11 +1,8 @@
 # frozen_string_literal: true
 
 class City < ApplicationRecord
-  # Associations
-  belongs_to :area
-
   # Validations
-  validates_associated :area
-  validates :key, :gmt, :local_name, presence: true
-  validates :key, :gmt, numericality: { only_integer: true }
+  validates :key, :name, :area, :country, :region, presence: true
+  validates :region, uniqueness: { scope: %i[country area name] }
+  validates :key, numericality: { only_integer: true }
 end
