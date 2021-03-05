@@ -3,6 +3,6 @@
 class City < ApplicationRecord
   # Validations
   validates :key, :name, :area, :country, :region, presence: true
-  validates :region, uniqueness: { scope: [:country, :area, :name] }
+  validates :region, uniqueness: { scope: %i[country area name] }
   validates :key, numericality: { only_integer: true }
 end
