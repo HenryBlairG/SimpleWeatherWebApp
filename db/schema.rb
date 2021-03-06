@@ -10,38 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_04_162519) do
+ActiveRecord::Schema.define(version: 2021_03_05_053926) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "areas", force: :cascade do |t|
-    t.string "a_ID"
-    t.string "a_local_name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "cities", force: :cascade do |t|
-    t.string "key"
-    t.string "local_name"
-    t.integer "gmt"
+    t.string "key", null: false
+    t.string "name", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "countries", force: :cascade do |t|
-    t.string "c_ID"
-    t.string "c_local_name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "regions", force: :cascade do |t|
-    t.string "r_ID"
-    t.string "r_local_name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.string "area", null: false
+    t.string "country", null: false
+    t.string "region", null: false
+    t.index ["region", "country", "area", "name"], name: "index_cities_on_region_and_country_and_area_and_name", unique: true
   end
 
 end

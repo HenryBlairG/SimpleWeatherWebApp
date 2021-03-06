@@ -25,6 +25,11 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+# API support
+gem 'grape', '>= 1.5.2'
+gem 'grape-active_model_serializers', '>= 1.5.2'
+gem 'rack-cors', '>= 1.1.1'
+gem 'rest-client', '>= 2.1.0'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

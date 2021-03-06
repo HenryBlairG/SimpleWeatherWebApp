@@ -21,7 +21,7 @@ require 'sprockets/railtie'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Example
+module WeatherApp
   # Application class
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
@@ -34,5 +34,14 @@ module Example
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Rack-CORS SetUp
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', headers: :any,
+                      methods: %i[get post put delete options]
+      end
+    end
   end
 end
