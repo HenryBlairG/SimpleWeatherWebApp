@@ -120,7 +120,7 @@ export default {
     this.status = "";
   },
   mounted: async function () {
-    // window.setInterval(this.reload, 60_000);
+    window.setInterval(this.reload, 60_000);
   },
   watch: {
     cityChoice: async function () {
