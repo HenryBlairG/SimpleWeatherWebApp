@@ -21,7 +21,7 @@ module API
           requires :key, type: String, desc: 'Key of the city'
         end
         get ':key' do
-          qry = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/#{permitted_params[:key]}?apikey=#{apikey}&metric=true"
+          qry = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/#{permitted_params[:key]}?apikey=#{apikey}&details=true&metric=true"
           rsp = RestClient.get(qry, headers: {})
           rsp.body
         end
