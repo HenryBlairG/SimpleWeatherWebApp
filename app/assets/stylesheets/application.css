@@ -1,0 +1,141 @@
+:root {
+  --arrow-angle: 0deg;
+}
+
+html, body {
+  height: 100%;
+}
+
+#forecast {
+  height: 82%;
+}
+
+section.navigation {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+  height: 8%;
+  min-height: 3em;
+  background-color: darkslategray;
+}
+
+section.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+section.navigation li {
+  float: left;
+}
+
+section.navigation li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1.5em 1.5em;
+  text-decoration: none;
+}
+
+section.navigation li a:hover {
+  background-color: black;
+}
+
+section.list-all > * {
+  margin: auto;
+  width: 50%;
+}
+
+h1 {
+  padding: 5%;
+  text-align: center;
+}
+
+th, td {
+  padding: .5em;
+  text-align: center;
+}
+
+th {
+  background-color: blue;
+  color: white;
+}
+
+tr:nth-child(even) {background-color: aquamarine;}
+tr:nth-child(odd) {background-color: whitesmoke;}
+tr:hover {background-color: aqua;}
+
+#forecast {
+  height: 92%,
+
+}
+
+.app-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.app-wrapper * {
+  margin: auto;
+  padding: 1ch;
+  border-radius: 1ch;
+}
+
+.app-wrapper > .city-selector {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 75%;
+  min-width: 20ch;
+  border-style: hidden solid hidden solid;
+  height: 100%;
+}
+
+.app-wrapper > .city-creator {
+  flex: 1 1 15%;
+  height: 100%;
+}
+
+.city-creator > * {
+  max-width: 100%;
+}
+
+.city-selector > .graph-display {
+  flex: 1 1 70%;
+  min-width: 15ch;
+  height: 95%;
+}
+
+.city-selector > .wind-display {
+  flex: 1 1 20%;
+  border-style: hidden double hidden double;
+  height: 50%;
+  position: relative;
+  min-width: 15ch;
+}
+
+.graph-display > * {
+  max-width: 100%;
+}
+
+.wind-display > .obj {
+  position: absolute;
+  width: 90%;
+}
+
+.obj > img {
+  width: inherit;
+  height: inherit;
+}
+
+.obj > p {
+  color: yellow
+  ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
