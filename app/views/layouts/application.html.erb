@@ -10,6 +10,12 @@
   </head>
 
   <body>
+    <section class="navigation">
+      <ul>
+        <li> <%= link_to "All Cities", root_path %> </li>
+        <li> <%= link_to "ForeCast",   forecast_city_index_path %> </li>
+      </ul>
+    </section>
     <%= yield %>
   </body>
 </html>

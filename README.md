@@ -41,3 +41,8 @@
 * [Setup de Vue con proyecto existente de Rails (Ver step_by_step.md)](https://gist.github.com/stungeye/65558d2d7d03356754a3ede55f6fcf31)
 * [Tutorial para integrar API con Rails](https://medium.com/@ryanwaldorf/how-to-add-an-api-to-an-existing-rails-app-1d2419ba91bd)
 * [AccuWeather](https://developer.accuweather.com/)
+
+## Desiciones de Diseño.
+
+* Se utilizó Grape Para La API ya que es una gema cuyo uso se me pareció mucho al módulo de requests de python y sigue siendo mantenida activamente al dia de hoy
+* Se utilizó Chart.js Porque es una librería con la que estuve trabajando hace poco tiempo y me sentía cómodo desarrollando con ella.
