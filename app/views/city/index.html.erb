@@ -1,1 +1,27 @@
-<h1>Simple Weather Web App</h1>
+<h1>All Cities</h1>
+
+<section class="list-all">
+  <table>
+    <thead>
+      <tr>
+        <th>City</th>
+        <th>Area</th>
+        <th>Country</th>
+        <th>Region</th>
+        <th>Options</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @cities.each do |city| %>
+        <tr>
+          <td> <%= city.name %> </td>
+          <td> <%= city.area %> </td>
+          <td> <%= city.country %> </td>
+          <td> <%= city.region %> </td>
+          <td> <%= link_to "🗑️", city_path(city), method: :delete %> </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</section>
+

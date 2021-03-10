@@ -7,9 +7,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-cities = (33..43).map do |n|
+cities = (10..99).map do |n|
   {
-    key: '11111',
+    key: "#{n}#{n}#{n}",
     name: "Ciudad de Henry #{n}",
     area: "Area de Henry #{n}",
     country: "Pais de Henry #{n}",
