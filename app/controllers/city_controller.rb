@@ -4,9 +4,6 @@ class CityController < ApplicationController
     @cities = City.all
   end
 
-  def destroy  # D
-  end
-
   def forecast
   end
 end

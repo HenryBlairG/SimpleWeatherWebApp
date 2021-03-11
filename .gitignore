@@ -48,3 +48,4 @@ coverage
 *.pdf
 
 example_resp.json
+*core*
